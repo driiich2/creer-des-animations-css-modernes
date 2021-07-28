@@ -1,0 +1,22 @@
+{
+  "name": "creer-des-animations-css-modernes",
+  "version": "1.0.0",
+  "description": "https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/driiich2/creer-des-animations-css-modernes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/driiich2/creer-des-animations-css-modernes/issues"
+  },
+  "homepage": "https://github.com/driiich2/creer-des-animations-css-modernes#readme",
+  "dependencies": {
+    "sass": "^1.36.0"
+  }
+}

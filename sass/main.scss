@@ -1,0 +1,72 @@
+$cd-btn: #011c37;
+$cd-secondary: #371b24;
+$ball-size: 40px;
+$cd-txt: #15DEA5;
+
+.container {
+  width: 500px;
+  margin: 200px auto auto;
+  padding: 200px;
+  background-color: rgb(237, 246, 247);
+}
+
+// ex1
+.btn {
+  background: $cd-btn;
+  color: $cd-txt;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  // Animation
+  transform: scale(1);
+  transition: transform 400ms;
+  &:hover {
+    // Animation
+    transform: scale(1.15);
+  }
+  &:hover + .ball{
+    transform: scale(0.1);
+  }
+}
+
+.ball {
+  width: $ball-size;
+  height: $ball-size;
+  background: $cd-secondary;
+  margin-bottom: 1rem;
+  border-radius: $ball-size * 0.5;
+  transition: transform 4000ms;
+}
+
+// ex2
+$cd-txt: #6300a0;
+$cd-box: #fff;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+
+.form {
+  &__group {
+    & input {
+      border: 2px solid $cd-box;
+      border-radius: 100rem;
+      color: $cd-txt;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      outline: none;
+      padding: .5rem 1.5rem;
+      width: 100%;
+
+      // Animation
+      transition: background-color 500ms;
+      &:focus {
+        border: 2px solid $cd-txt;
+      }
+      &:not(:focus):invalid {
+        background: $cd-danger;
+        border: 2px solid $cd-danger;
+        color: $cd-txt--invalid;
+      }
+    }
+  }
+}
